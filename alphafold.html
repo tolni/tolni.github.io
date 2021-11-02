@@ -7,10 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!--Cosmetic-->
+    
     <style>
-        .avatar {float : left; max-width: 100px; max-height: 100px;}
-        /*.authorInfo {background-color: bisque;  }*/
+        .avatar {float : left; max-width: 150px; max-height: 150px; border-radius: 5px;margin-left: 0px;padding-left: 10px; padding-right: 10px}
+        p, h1, h2, h3, h4 /*from AI.html*/
+        {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 400;
+        }
     </style>
 
     </head>
@@ -32,39 +36,58 @@
             </div>
           </nav>
 
-        <h1>Alphafold</h1>
-        <h4>Predicting Protein Folding Using AI</h4>
-        <br>
+          <!--style from AI.html-->
+          <div class="container" style="background-color: yellow; border-radius: 5px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <h1 class="display-2" style="text-align: center;">Alphafold</h1>
+          </div>
+        
+        
+        <div class="container-fluid" style="background-color: gainsboro">
+            <h3>Predicting Protein Folding Using AI</h3>
 
-        <p>Proteins have a wide range of uses and applications, from breaking down industrial waste to helping cure diseases. 
-            This is all possible due to the trillions upon trillions of ways a protein can fold, which is determined by the amino acid sequence that makes up the protein. 
-            It has been estimated that there are around 10<sup>300</sup> ways a typical protein could fold, and finding a way to predict how a protein folds given its amino acid sequence is known as the 'protein folding problem'.
-        </p>
-        <br>
-        <img src="https://lh3.googleusercontent.com/pL18FAkwzN55iHvMt2W4XRGjueHWe0ILqX1Qm2e4qlPsK3yjDSott3LZIgSg2uqPPn7Zvu3hfxUtYtjDs3bM27zcF8AO_jYnfk8q=w1440-rw-v1" style="max-width: 60%; max-height: 30%;" alt="The main neural network model architecture used in alphafold">
-        <br>
-        <p>  
-            Deepmind's Alphafold uses AI and deep-learning architecture to computationally predict the 3d structure of a protein given its amino acid sequence in a matter of days. 
-            Current experimental techniques like cryo-electron microscopy, on the other hand, can take years per protein and require expensive specialised equipment. 
-            Alphafold also produces results on-par with these experimental techniques, having errors only as small as the width of an atom or two on average.
-        </p>
-        <br>
-        <img src="https://lh3.googleusercontent.com/J5RC0j1DeUWaNc5h6nGwJwsQSLUuTXINP6we2ymLJ_WUg9bH-hvfvI8WVFeghN-_YR69MryNK5O2rFcVNwz9PZePpBtLdwdshCGzLdM=w1440-rw-v1" style="max-width: 40%; max-height: 40%;" alt="Comparision between predictions from alphafold and experimental techniques">
-        <br>
-        <p>
-            Alphafold's accurate predictions allow for leaps and bounds in understanding the human body, 
-            from figuring out the ways signals are transmitted across cell membranes to investigating how and why certain proteins malfunction, 
-            allowing us to improve our understanding of some diseases and find treatments faster. Alphafold isn't limited to only being used on 
-            pre-existing, known proteins, but can help with discovering the hundreds of millions of proteins currently without models.
-        </p>
+            <div class="container-fluid" style="background-color:rgb(162, 162, 162);border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">
+                <p>Proteins have a wide range of uses and applications, from breaking down industrial waste to helping cure diseases. 
+                    This is all possible due to the trillions upon trillions of ways a protein can fold, which is determined by the amino acid sequence that makes up the protein. 
+                    It has been estimated that there are around 10<sup>300</sup> ways a typical protein could fold, and finding a way to predict how a protein folds given its amino acid sequence is known as the 'protein folding problem'.
+                </p>
+            </div>
+            <br>
+            <img src="https://lh3.googleusercontent.com/pL18FAkwzN55iHvMt2W4XRGjueHWe0ILqX1Qm2e4qlPsK3yjDSott3LZIgSg2uqPPn7Zvu3hfxUtYtjDs3bM27zcF8AO_jYnfk8q=w1440-rw-v1" style="max-width: 60%; max-height: 30%;" alt="The main neural network model architecture used in alphafold">
+            <br>
+            <br>
+            <div class="container-fluid" style="background-color:rgb(162, 162, 162);border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">    
+                <p>  
+                    Deepmind's Alphafold uses AI and deep-learning architecture to computationally predict the 3d structure of a protein given its amino acid sequence in a matter of days. 
+                    Current experimental techniques like cryo-electron microscopy, on the other hand, can take years per protein and require expensive specialised equipment. 
+                    Alphafold also produces results on-par with these experimental techniques, having errors only as small as the width of an atom or two on average.
+                </p>
+            </div>
+            <br>
+            <img src="https://lh3.googleusercontent.com/J5RC0j1DeUWaNc5h6nGwJwsQSLUuTXINP6we2ymLJ_WUg9bH-hvfvI8WVFeghN-_YR69MryNK5O2rFcVNwz9PZePpBtLdwdshCGzLdM=w1440-rw-v1" style="max-width: 40%; max-height: 40%;" alt="Comparision between predictions from alphafold and experimental techniques">
+            <br>
+            <br>
+            <div class="container-fluid" style="background-color:rgb(162, 162, 162);border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">
+                <p>
+                    Alphafold's accurate predictions allow for leaps and bounds in understanding the human body, 
+                    from figuring out the ways signals are transmitted across cell membranes to investigating how and why certain proteins malfunction, 
+                    allowing us to improve our understanding of some diseases and find treatments faster. Alphafold isn't limited to only being used on 
+                    pre-existing, known proteins, but can help with discovering the hundreds of millions of proteins currently without models.
+                </p>
+               
+            </div>
+            <br>
+            <p>
+                The content of this site was sourced from <a href="https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology" target="_blank">this DeepMind post</a>
+            </p>
+            
+        </div>
 
         <div class="authorInfo">
-            <img src="https://avatars.githubusercontent.com/u/31244208?v=4" class="avatar">
+            <img src="https://avatars.githubusercontent.com/Carrotgoat" class="avatar">
             <h3 style="vertical-align: top;">About the Author</h3>
-            <blockquote >
-                
+            <blockquote style="border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">
                 <p>
-                    testing testing 1 2 3
+                   Words go here
                     
                 </p>
             </blockquote>
