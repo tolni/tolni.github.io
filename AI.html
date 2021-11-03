@@ -46,17 +46,14 @@
             are made in an unconventional way; rather than being fixed pieces of code that execute a task,
             AI constantly adapts to make itself more suited to the task, similarly to how humans learn. </p>
 
-          <p>A common implementation of AI is through something called a Neural Network. </p>
+          <p>A common implementation of AI is through something called a Neural Network. This is a collection of nodes, similar to synapses in a brain. There are input nodes, output nodes, and "hidden nodes". Each node is connected to the layer either side of it, where it manipulates its inputs and generates an output. While this may result in random outputs at first, over time these nodes can "evolve" and tweak themselves to give a more meaningful output.</p>
     </div>
     
     <img class="img-fluid" style="max-width: 30%;" ;
         src="https://1.cms.s81c.com/sites/default/files/2021-01-06/ICLH_Diagram_Batch_01_03-DeepNeuralNetwork-WHITEBG.png"
         alt="A picture of a typical neural network system">
         <a href="https://www.ibm.com/cloud/learn/neural-networks">Source: IBM</a> 
-   
-
-
-    <p>For example, let's take COVID as a case study:</p>
+  
     <div></div>
     <h3>Application: Detecting COVID</h3>
     <div class="container-fluid infobox" >
@@ -64,16 +61,12 @@
         It did this by recording the sound of participants coughing.
         The sound of coughs from people with covid differs slightly to that of people without,
         but it is undiscernible to the human ear. Researchers fed the neural network algorithm with
-        70000 cough and breath sounds and samples, of which 2500 were from people with a positive coronavirus test.
-        A deep learning neural network algorithm works by decomposing a sound, running those sounds through
-        nodes which perform simple arithmetic operations to the sound, and then a number between 0 and 1 is
-        produced at the end giving the likelihood of covid. With known results, the algorithm can tweak its
-        nodes such that all the known covid cases with sounds will produce a value of 1, and all the known
-        negative cases with sounds will produce a value of 0. This means when unknown sound samples are given
-        to the machine, it can accurately predict whether that person has covid or not.</p>
+        70000 cough and breath sounds and samples, of which 2500 were from people with a positive coronavirus test. With these samples, the neural network can "evolve" as mentioned above, in such a way so that it associates the positive coughs with "positive"(1) and negative coughs with "negative"(0). This means when it is then fed a previously unheard cough sample, it can run the sample through the same nodes and generate a number between 0 and 1, a probability of the cough being from someone with covid or not.</p>
     </div>
   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2z1_sDNoLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+
   
 
 
