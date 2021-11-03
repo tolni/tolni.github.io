@@ -6,16 +6,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    
-    <style>
-        .avatar {float : left; max-width: 150px; max-height: 150px; border-radius: 5px;margin-left: 0px;padding-left: 10px; padding-right: 10px}
-        p, h1, h2, h3, h4 /*from AI.html*/
-        {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            font-weight: 400;
-        }
-    </style>
+    <link rel = "stylesheet" href = "GenericStyle.css">
     <title>Alphafold</title>
     </head>
 
@@ -37,15 +28,15 @@
           </nav>
 
           <!--style from AI.html-->
-          <div class="container" style="background-color: yellow; border-radius: 5px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+          <div class="container maintitle">
           <h1 class="display-2" style="text-align: center;">Alphafold</h1>
           </div>
         
         
-        <div class="container-fluid" style="background-color: gainsboro">
+        <div class="container-fluid backgroundcontainer">
             <h3>Predicting Protein Folding Using AI</h3>
 
-            <div class="container-fluid" style="background-color:rgb(162, 162, 162);border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">
+            <div class="container-fluid infobox">
                 <p>Proteins have a wide range of uses and applications, from breaking down industrial waste to helping cure diseases. 
                     This is all possible due to the trillions upon trillions of ways a protein can fold, which is determined by the amino acid sequence that makes up the protein. 
                     It has been estimated that there are around 10<sup>300</sup> ways a typical protein could fold, and finding a way to predict how a protein folds given its amino acid sequence is known as the 'protein folding problem'.
@@ -55,7 +46,7 @@
             <img src="https://lh3.googleusercontent.com/pL18FAkwzN55iHvMt2W4XRGjueHWe0ILqX1Qm2e4qlPsK3yjDSott3LZIgSg2uqPPn7Zvu3hfxUtYtjDs3bM27zcF8AO_jYnfk8q=w1440-rw-v1" style="max-width: 60%; max-height: 30%;" alt="The main neural network model architecture used in alphafold">
             <br>
             <br>
-            <div class="container-fluid" style="background-color:rgb(162, 162, 162);border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">    
+            <div class="container-fluid infobox">    
                 <p>  
                     Deepmind's Alphafold uses AI and deep-learning architecture to computationally predict the 3d structure of a protein given its amino acid sequence in a matter of days. 
                     Current experimental techniques like cryo-electron microscopy, on the other hand, can take years per protein and require expensive specialised equipment. 
@@ -66,7 +57,7 @@
             <img src="https://lh3.googleusercontent.com/J5RC0j1DeUWaNc5h6nGwJwsQSLUuTXINP6we2ymLJ_WUg9bH-hvfvI8WVFeghN-_YR69MryNK5O2rFcVNwz9PZePpBtLdwdshCGzLdM=w1440-rw-v1" style="max-width: 40%; max-height: 40%;" alt="Comparision between predictions from alphafold and experimental techniques">
             <br>
             <br>
-            <div class="container-fluid" style="background-color:rgb(162, 162, 162);border-radius: 5px;margin-left: 0px;padding-left: 10px;padding-top: 10px;">
+            <div class="container-fluid infobox">
                 <p>
                     Alphafold's accurate predictions allow for leaps and bounds in understanding the human body, 
                     from figuring out the ways signals are transmitted across cell membranes to investigating how and why certain proteins malfunction, 
