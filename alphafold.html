@@ -49,8 +49,11 @@
             <div class="container-fluid infobox">    
                 <p>  
                     Deepmind's Alphafold uses AI and deep-learning architecture to computationally predict the 3d structure of a protein given its amino acid sequence in a matter of days. 
+                    It treats the folded protein as a spatial graph, where nodes represent amino acid residues and edges connect nearby residues with each other, helping us understand how proteins physically interact with each other. 
+                    Alphafold is built on an attention-based neural network that interprets and refines the structure of the graph using evalutionarily related sequences, multiple sequence alignment, and amino acid residue pairs; iterating this process to formulate accurate predictions.
                     Current experimental techniques like cryo-electron microscopy, on the other hand, can take years per protein and require expensive specialised equipment. 
-                    Alphafold also produces results on-par with these experimental techniques, having errors only as small as the width of an atom or two on average.
+                    Alphafold produces results on-par with these experimental techniques, having errors only as small as the width of an atom or two on average. 
+                    Accuracy is mainly measured using the Global Distance Test (GDT), which gives scores between 0 and 100 (which can be thought of the "percentage of amino acid residues within a threshold distance from the correct position") where scores greater than 90 can informally be considered competitive with experimental results. Alphafold achieved a median score of 92.4 .
                 </p>
             </div>
             <br>
