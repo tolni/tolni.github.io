@@ -1,106 +1,61 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel = "stylesheet" href = "GenericStyle.css">
-    <style>
-      .img-container{
-        float: left;
-        width: 50%;
-        padding: 5px;
-      }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" href = "GenericStyle.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand active" href="index.html">Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="heart.html">3D Heart Valve</a></li>
+        <li><a href="AI.html">AI</a></li>
+        <li><a href="alphafold.html">AlphaFold</a></li>
+        <li><a href="bionic.html">Bionic Leg</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="container maintitle">
+    <h1 class="display-2" style="text-align: center;">Home</h1>
+  </div>
+
+  
+  <div class="container-fluid backgroundcontainer">
+    <h3>Applications of computing that have made a positive impact on society</h3>
     
-    <title>3D Heart Valve</title>
-  </head>
+    
+    <button onclick="location.href= 'heart.html'" type="button" class="container-fluid infobox" style = "width:50%;text-align: left;">
+        3D heart valve: Researchers are now able to print lifelike heart valve models
+    </button>
+     <p></p>  
+    <button onclick="location.href= 'AI.html'" type="button" class="container-fluid infobox"style = "width:50%;text-align: left;">
+        AI: One of the uses of AI has been to listen to coughs and predict whether the cougher has COVID or not
+    </button>
+    <p></p>
+    <button onclick="location.href= 'alphafold.html'" type="button" class="container-fluid infobox"style = "width:50%;text-align: left;">
+        AlphaFold: Computers can now calculate with accuracy the way proteins fold, which hugely assists our understanding of biology
+    </button>
+    <p></p>
+    <button onclick="location.href= 'bionic.html'" type="button" class="container-fluid infobox"style = "width:50%;text-align: left;">
+        Bionic Leg: Open source bionic legs can vastly reduce the cost compared to traditional bionic legs
+    </button>
 
-  <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="home.html">Home</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">3D Heart Valve</a></li>
-          <li><a href="AI.html">AI</a></li>
-          <li><a href="alphafold.html">AlphaFold</a></li>
-          <li><a href="bionic.html">Bionic Leg</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <!--style from AI.html-->
 
-    <div class="container maintitle">
-      <h1 class="display-2" style="text-align: center;">3D Heart Valve</h1>
-      
-    </div>
-    <div class="container-fluid backgroundcontainer">
-      <h3>Researchers 3D print lifelike heart valve models</h3>
+  </div>
+</body>
 
-      <div class="container-fluid infobox" >
-        <p>
-          The heart is a complex organ that pumps blood through the body with an intricate system of muscle layers, chambers, valves and nodes.
-          The heart is considered as the body’s circulatory pump, located in the thoracic cavity. It is made up of four chambers, two upper chambers known as Atria and two lower, thicker walled chambers, known as Ventricles. 
-          It has a strong muscular wall and is made up of a special type of muscle known as myocardium, which is only found in the heart. The septum divides the two sides of the heart and four one way valves control the blood flow. 
-          These valves prevent the backward flow of blood, and are actual flaps that are located on each end of the two ventricles (lower chambers of the heart). They act as one-way inlets of blood on one side of a ventricle and one-way outlets of blood on the other side of a ventricle. 
-        </p>
-      </div>
-      <img class='img-fluid' src='https://upload.wikimedia.org/wikipedia/commons/1/12/CG_Heart.gif' style='max-width:30% ; max-height: 30%;' alt="gif of pumping heart">
-      <br>
-      
-      <div class="container-fluid infobox"> 
-        <p>   
-        Since the heart is technically the source of life, it unfortunately means that heart diseases are one of the leading causes of death. 
-        Aortic stenosis, a condition that occurs when the heart’s aortic valve narrows and prevents the valve from opening fully, is one of the most common cardiovascular conditions in the elderly and affects about 2.7 million adults over the age of 75 in North America. 
-        Symptomatic severe aortic stenosis is associated with high mortality rates, up to 50% at 1 year, and the prevalence will likely increase as the population ages.
-        </p>
-      </div>
-      <br>
-      <img class='img-fluid' src='https://i.makeagif.com/media/9-17-2015/M-bVzy.gif' style='max-width:30% ; max-height: 30%;' alt="gif of healthy valve">
-      <img class='img-fluid' src='https://i.makeagif.com/media/9-17-2015/6NSEBH.gif' style='max-width:30% ; max-height: 30%;' alt="gif of diseased valve">
-      <br>
-      <br>
-      <div class="container-fluid infobox">
-        <p>
-        Thankfully, researchers from the University of Minnesota, with support from Medtronic, have developed a groundbreaking process for multi-material 3D printing of lifelike models of the heart’s aortic valve and the surrounding structures that mimic the exact look and feel of a real patient.
-        These patient-specific organ models, which include 3D-printed soft sensor arrays integrated into the structure, are fabricated using specialized inks and a customized 3D printing process. Such models can be used in preparation for minimally invasive procedures to improve outcomes in thousands of patients worldwide.
-        <br>
-        The researchers 3D printed what is called the aortic root, the section of the aorta closest to and attached to the heart. The aortic root consists of the aortic valve and the openings for the coronary arteries. The aortic valve has three flaps, called leaflets, surrounded by a fibrous ring. The model also included part of the left ventricle muscle and the ascending aorta.
-        The aortic root models are made by using CT scans of the patient to match the exact shape. They are then 3D printed using specialized silicone-based inks that mechanically match the feel of real heart tissue. 
-        </p>
-      </div>
-      <br>
-      <br>
-      <iframe width='500' height='400' 
-      src='https://www.youtube.com/embed/ZbXbyt9QFrg'
-      style='max-width:40% ; max-height: 15%;'>
-      </iframe>
-      <img class= 'img-fluid img-container' 
-      src='https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/styles/desktop/public/3D-printed-heart-valves.jpg?itok=tBDo6Zde' 
-      style='max-width:30% ; max-height: 30%;'
-      alt="picture of 3D printed valve">
-
-      <p>
-        <br>
-        Source: <a href="https://twin-cities.umn.edu/news-events/researchers-3d-print-lifelike-heart-valve-models" target="blank">here</a>
-      </p>
-
-      <div class="authorInfo">
-        <img src="https://avatars.githubusercontent.com/tolni" class="avatar">
-        <h3 style="vertical-align: top;">About the Author</h3>
-        <blockquote>
-          <p>
-              
-          </p>
-        </blockquote>
-      </div>
-    </div>
-  </body>
 </html>
